@@ -1,17 +1,22 @@
 .header-top{
 	height: 57px;
 	background-color: @white;
-	@media(min-width: 768px){height: 87px;}
-	@media(min-width: 1200px){height: 100px;}
+	@media(min-width: 750px){height: 87px;}
+	@media(min-width: 1440px){height: 100px;}
 }
 .header-top__descktop{
 	display: none;
-	@media(min-width: 1200px){display: block;}
+	@media(min-width: 1440px){
+		display:flex;
+		align-items: center;
+
+	}
 }
 
 .logo{
 	height: 73px;
 	width: 190px;
+	margin-right: 50px;
 }
 /* center*/
 .header-top__center-address,
@@ -24,17 +29,16 @@
 	height: 100%;
 }
 .header-top__center{
-	padding-left: 3.5em;
-
 }
 .header-top__center-address{
-	margin-right: 10.3em;
+	margin-right: 145px;
 	cursor:pointer;
 }
 .email-address {
 	display: inline-block;
 	color:@black;
 }
+.header-top__center-email{margin-right: 65px;}
 .header-top__center-email:hover{
 	opacity: .8;
 	color:inherit;
@@ -69,13 +73,13 @@
 	text-transform: uppercase;
 	border: 1px solid @greendBadge;
 	border-radius: 5px;
-	width: 169px;
+	//-width: 169px;
 	height: 36px;
 	color:@greendBadge;
 	line-height: 1.2;
 	text-align: center;
 	font-size: 13px;
-	padding: 10px 19px 14px 18px;
+	padding: 10px 18px 14px 17px;
 }
 
 /*mobile header-top*/
@@ -83,23 +87,30 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	@media(min-width: 1200px){display: none;}
+	padding-left: 16px;
+	padding-right: 16px;
+	@media(min-width: 768px){
+		padding-left: 0px;
+		padding-right: 0px;
+
+	}
+	@media(min-width: 1440px){display: none;}
 
 }
 .logo-mobile{
 	display: inline-block;
-	@media(min-width: 768px){
+	@media(min-width: 750px){
 		display: none;
 	}
 
 }
 .logo-medium{
 	display: none;
-	@media(min-width: 768px){
+	@media(min-width: 750px){
 		display: inline-block;
-	width: 20vmax;
+
 	}
-	@media(min-width: 1200px){
+	@media(min-width: 1440px){
 		display: none;
 	}
 
