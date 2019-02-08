@@ -1,0 +1,74 @@
+.header-top{
+	height: 100px;
+	display: flex;
+	align-items: baseline;
+	background-color: @white;
+}
+.logo{
+	height: 73px;
+	width: 190px;
+}
+/* center*/
+.header-top__center-address,
+.header-top__center-email,
+.header-top__center{
+	font-size: 14px;
+	color:@black;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.header-top__center{
+	padding-left: 3.5em;
+
+}
+.header-top__center-address{
+	margin-right: 10.3em;
+	cursor:pointer;
+}
+.email-address {
+	display: inline-block;
+	color:@black;
+}
+.header-top__center-email:hover{
+	opacity: .8;
+	color:inherit;
+
+}
+.address-icon,
+.email-icon{
+	margin-right: 8px;
+}
+
+/*правый блок*/
+.header-top__right{
+	display: flex;
+	align-items: center;
+	height: 100%;
+
+}
+.header-top__right-phone{
+	display: flex;
+	flex-direction: column;
+	margin-right: 25px;
+	span {
+		font-size: 10px;
+	}
+}
+.phone-number{
+	font-size: 18px;
+	font-weight: 700;
+}
+.callback-btn {
+	cursor: pointer;
+	text-transform: uppercase;
+	border: 1px solid @greendBadge;
+	border-radius: 5px;
+	width: 169px;
+	height: 36px;
+	color:@greendBadge;
+	line-height: 1.2;
+	text-align: center;
+	font-size: 13px;
+	padding: 10px 19px 14px 18px;
+}

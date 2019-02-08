@@ -7,11 +7,30 @@ block variables
 block content
 	.container.container--left
 
-		.section-ui HEADER-TOP
+		.section-ui
+			.title-2(style="margin-bottom:40px") HEADER-TOP
 			.header-top
 				.container
 					.row
-						.col-md-2
+						.d-none.d-md-block.col-md-2
 							.logo
 								a(href="index.html")
 									img(src="../img/logo.png", alt="logo")
+						.d-none.d-md-block.col-md-6
+							.header-top__center
+								.header-top__center-address
+									.address-icon
+										+maps-icon
+									.address-city.
+										г. Курск, ул. Ленина, д.3
+								.header-top__center-email
+									.email-icon
+										img(src="../img/icons/envelope.png", alt="")
+									a(href="mailto:78003332222@yandex.ru").email-address 78003332222@yandex.ru
+						.d-none.d-md-block.col-md-4
+							.header-top__right
+								.header-top__right-phone
+									a(href="tel:88003332222").phone-number +7&nbsp;(800)&nbsp;333&nbsp;2&nbsp;222
+									span Работаем с 11.00&nbsp;до&nbsp;23.00
+								.header-top__right-btn
+									.callback-btn Обратный звонок
