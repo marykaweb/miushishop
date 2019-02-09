@@ -1,0 +1,36 @@
+//-корзинка в шапке
+mixin cart
+	i.cart&attributes(attributes)
+		svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="21" viewBox="0 0 23 21")
+			image(id="cart.svg" width="23" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAMAAACaPIWZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAAAfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkfuQkAAAAOFErLAAAASHRSTlMA4rCawO37DYhOQpQH9ds9vZi1IWBvaGsprgHZ/B7wBEirnTu4VYEnzhL9yJVfyREP9OqC0jD36Bhh2LkbV8EjFPantHtu4TKhmbWXAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MCCA41FFEFg8IAAAC6SURBVBjTnZDXEoIwEEWDAjawd+wVsTdE7P3+/xfJICE48uR9SM6czG5ml3AAAuQ3QZ4XxBDxSxgRXx9FzNdLctw6E0meJWU/pJEhJAtPBNvnkP9qUEDYvosoeXVZqVQ/xNXqHt9A06EW2h7fQcKhLnpM96FSHGhD5kcYuzzRphRn84Xk+iVUOtIKS1a71tlMG4P8m62521M+mMeTg+cK0KLLvcDdimH9dnU4JAI3WnvXlSLlh/x8EfIGf5MZ0waNyscAAAAASUVORK5CYII=")
+
+//-корзинка на кнопке
+mixin cart-in-button
+	i.cart-in-button&attributes(attributes)
+		svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="20" viewBox="0 0 22 20")
+			image(id="btn-cart.svg" width="22" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAQAAAAjdQW7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAggONRBWaEfbAAABGElEQVQoz6WSO0sDQRhF7yRrCokPNNgKwT8QUBCMD7CwFDubNHaprK1SpNDaVtB0FmkU0gQsVUQJpEsRf0AIFouFIIjHwsHNzs6yhbcZ9nD28s1D3BMSEnKizOT0pL76yusoW7bhCihnN/+mK2kvSza2uaSxbs2BJNFR1es+BvafN3raJTBfkoYqJsRZVVSKpm4Cm6l7agC16HMLaKaoBUaMKEQg4J2XFLkGNOLohm8WvXKPT5biqA4cetQq0HJhGbj0yG2gMnHOFr+qqDPHndKpHsx2suMcf/btbcTkaa3+PYAoH+ZZ/wp1uhwn6AptrlmOwzU734Yj3wHQkTQx4bxd55zqBUnSTLwhxwVjWuSd5h2GDFiXpB9HBJ9NCJBuGgAAAABJRU5ErkJggg==")
+
+//-местоположение
+mixin maps-icon
+	i.maps-icon&attributes(attributes)
+		svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="16" viewBox="0 0 11 16")
+			image(id="maps.svg" width="11" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAMAAAD3Y3VMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAdVBMVEUAAAAfugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugofugoAAADsL4U4AAAAJXRSTlMAGJDd9jbsFOj4g9Mv/ST31e3kAbteaPuTXA/wgAvlVKnf3jDmWjnXggAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAggONRRRBYPCAAAAfElEQVQI1y3MWRKDMAwDUAFlDRB2aNhLdf8r4gQ04/H7kA3A84NP4HuQhBFtohCIE0Eqk8TISJUjV2QGxaKUZllQQbOyV6ioUbNphW3DGh3Zi3uyw0CO03cayQFm5pPZAMvrRZrr5rit9tvuvLvPOITHQ5iTP/Ma1/+y6wa0fw0v7wXqRgAAAABJRU5ErkJggg==")
+
+//-местоположение
+mixin fire-icon
+	i.fire-icon&attributes(attributes)
+		svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="31" viewBox="0 0 25 31")
+			image(id="fire.svg" width="25" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAfCAQAAAC4ua71AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAggONRPPYRZhAAABlElEQVQ4y42UzysEYRyHPzM2UStaFHtz0F5clD/BiRw2OVlypfwL+x8oIfel3MSF5CpqyyolBwkplJUfreTH8jjMzO7MmBnz3ObzfZ9535n3+75SBAxSZsyfmhHCuHbUoR7FhSG+AViNK/TygsU9iTiCyQF1JuMoU7i5oeU/oYErvCz+p4zwl+FoZSVAKdMdpVwQxC6Gd1g7ywxIEm2EMe0Wkhw7H0l/qPJMR11ZAuAWU2KYcOYcIU3VjiYkRiOUCkmrLSfVYNsLDChq25LKWrPsut7zySlRrFnKE/G5lAya9Raj7Rx+1GSqM6L8F1NdZui5PNdsYJ4Q6ZBVT5DgMCBPS+I1UElJ9PHhS1+tfdkPmP7ReJSME8358n1LWfeE7zqXVLGf5lX1VNedpnxwTb1Hhm1Wav135Ko9kHTiGVe86V0Jm67aTD022KrFRZ9SrFW2PIeM1lrpm4wrz9gXIBRp9f0KWtiwiyVSdpaiZGcbgRcTBjmuAbgjT448dwBck/Ode4/WSJYCZ1SBL84okKXRO+YX2liSHsl6QHkAAAAASUVORK5CYII=")
+
+//- стрелка в пагинации
+
+mixin arr-right
+	i.arr-right
+		svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="20" viewBox="0 0 27 20")
+			image(width="27" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAQAAADWi44LAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAggONREhb3dNAAABA0lEQVQ4y5XTIUtDURjG8f+dIMwwy0wuGC4YLBa1boO54hjzWmVNEIwKlsETVzQZ/ASmhSt3YRjcZCJo1eIHWBIGMzhwKIY78N50znnjAz+ew8t7PAyjLfZpa5JOMyZGk3PutOzKLhmxza2WkqFnZGidR/L02dOXfRt6p8yEEt3/RgsGeqXKJyVCLTow0DMNplToxNCSge4JmFGLocVKErRBhwwRgadjruw759NyBfGM3R5ZpkuWC506tGmHiCzXnDmsRJs8kOOGQ/1aM20wIE/IgX7AkslnwCo96vqOE5tTLjBkLX3KRqYVnvB5YTf5Vc2bPMHnLY1gwaSKH0w50jid/gEL0UJFrMhnugAAAABJRU5ErkJggg==")
+mixin arr-left
+	i.arr-right.arr-right--rotate
+		svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="20" viewBox="0 0 27 20")
+			image( width="27" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAQAAADWi44LAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAggONREhb3dNAAABA0lEQVQ4y5XTIUtDURjG8f+dIMwwy0wuGC4YLBa1boO54hjzWmVNEIwKlsETVzQZ/ASmhSt3YRjcZCJo1eIHWBIGMzhwKIY78N50znnjAz+ew8t7PAyjLfZpa5JOMyZGk3PutOzKLhmxza2WkqFnZGidR/L02dOXfRt6p8yEEt3/RgsGeqXKJyVCLTow0DMNplToxNCSge4JmFGLocVKErRBhwwRgadjruw759NyBfGM3R5ZpkuWC506tGmHiCzXnDmsRJs8kOOGQ/1aM20wIE/IgX7AkslnwCo96vqOE5tTLjBkLX3KRqYVnvB5YTf5Vc2bPMHnLY1gwaSKH0w50jid/gEL0UJFrMhnugAAAABJRU5ErkJggg==")
+
+
