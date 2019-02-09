@@ -1,0 +1,73 @@
+.nav-menu {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	padding-top: 17px;
+	min-width: 1170px;
+	border-top: 1px solid @menuTopBorder;
+}
+.nav-menu-links-item:hover,
+.nav-menu-profile__cab:hover,
+.nav-menu-profile__cart:hover {
+	background-color: @hoverMenu;
+	cursor: pointer;
+	transition: 0.5s ease-in;
+}
+.nav-menu-links,
+.nav-menu-profile {
+	margin: 0;
+	padding-left: 0;
+}
+.nav-menu-links-item {
+	display: inline;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	font-weight: 600;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 20px;
+	padding-bottom: 17px;
+	position: relative;
+}
+.nav-menu-profile {
+	padding-left: 60px;
+}
+.nav-menu-profile__cab,
+.nav-menu-profile__cart {
+	padding-left: 0;
+	padding-right: 0;
+	
+}
+.nav-menu-profile__cab {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 5px;
+}
+.nav-menu-profile__cart {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.nav-menu-links__dropdown {
+	margin-left: 5px;
+}
+// Drop Menu
+.nav-menu-links__dropmenu {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	display: none;
+	position: absolute;
+	padding-top: 15px;
+	width: 100%;
+}
+.nav-menu-links__dropmenu-item {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 20px;
+	padding-bottom: 17px;
+	&:hover {
+		background-color: @hoverMenu;
+		transition: 0.5s ease-in;
+	}
+}
