@@ -1,4 +1,4 @@
-$(document).ready(function() {	
+$(document).ready(function() {
 	// Scrollbar боковой панели (меню)
 	// $(".left-panel").customScrollbar({preventDefaultScroll: true});
 
@@ -22,5 +22,18 @@ $(document).ready(function() {
 		$('body').toggleClass('ui-nav--hidden');
 		$('.container').toggleClass('container--left');
 	});
+
+	// owlCarousel
+		$('.owl-carousel').owlCarousel({
+	      items: 1,
+	      autoplay:true,
+	      smartSpeed: 700,
+	      autoplayTimeout:5000,
+	      loop:true,
+	      touchDrag: true,
+	      margin: 0,
+	      dots: true,
+	      nav: true,
+	    });
 
 });
