@@ -1,11 +1,21 @@
-.owl-carousel.header-slider
-	//- slider item 1
-	.owl-carousel-item.item1
-		img(src="img/bg/header-bg.jpg", alt="")
-	//- slider item 2
-	.owl-carousel-item.item2
-		img(src="img/bg/header-bg.jpg", alt="")
+.header-content
+	.owl-carousel.header-slider
+		//- slider item 1
+		.owl-carousel-item(style="background: url(img/bg/header-bg.jpg)")
+		//- slider item 1
+		.owl-carousel-item(style="background: url(img/bg/header-bg.jpg)")
+		//- slider item 1
+		.owl-carousel-item(style="background: url(img/bg/header-bg.jpg)")
 
-	//- slider item 3
-	.owl-carousel-item.item3
-		img(src="img/bg/header-bg.jpg", alt="")
+
+	.header-text
+		.container
+			.row
+				.col-md-6
+					.header-text-box
+						h1.title-1 Счастливые #[br] часы
+						.work-mode с 11:00 до 16:00 в будние дни
+						a(href="#").header-btn Подробнее
+						.header-text__discount
+							span скидка
+							span 15%
