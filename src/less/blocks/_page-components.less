@@ -1,0 +1,39 @@
+/*section title*/
+.section-title-2{
+	color:@sectionTitle;
+	font-size:44px;
+	font-weight: 400;
+	display: inline-block;
+	position: relative;
+	font-family: 'Lemon Tuesday';
+	@media(min-width: 750px){font-size: 48px;}
+	@media(min-width: 1440px){font-size: 60px;}
+
+}
+.section-title-2:before,
+.section-title-2:after{
+	position: absolute;
+	content: "";
+	width: 110px;
+	height: 40px;
+	top: 50%;
+
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.section-title-2:after{
+	right: 0;
+	background: url(../img/title-right.png);
+	transform: translate(130px, -50%);
+	@media(min-width: 750px){transform: translate(140px, -50%);;}
+	@media(min-width: 1440px){transform: translate(145px, -50%);;}
+}
+.section-title-2:before{
+	left: 0;
+	background: url(../img/title-left.png);
+	transform: translate( -130px, -50%);
+	@media(min-width: 750px){transform: translate( -140px, -50%);}
+	@media(min-width: 1440px){transform: translate( -145px, -50%);}
+}
+/*//section title*/
