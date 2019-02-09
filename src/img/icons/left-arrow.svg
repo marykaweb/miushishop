@@ -1,10 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="20" viewBox="0 0 27 20">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.5;
-      }
-    </style>
-  </defs>
-  <image id="left-arrow.svg_" data-name="left-arrow.svg " class="cls-1" width="27" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAQAAADWi44LAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAggONREhb3dNAAABDUlEQVQ4y5XTsUoDURCF4X93IxgEq90gxAiCYFax00JsbmOVykJSia8yjyJRRHwA62lsrCwkUWwsIopFCBGDssG18BJ0i703p56PgeFMQCGywB638kZpKgU0zzE1MhwsLKAjagy4AW8mc7SpM+REPryZRLRZZURHRi40ZRJyyBpjzmTgRpZJwAFNvui4LviHSUCLLTJO5dUP/W7bZ5uMc+n7Ighkh5b/OAA5VyHVGREAFa6ps07OpfT8WaS56bFETGpe1Ov4ABFYmJCavg69mYXLxKTmST06YpmFDWI2zKM6GzlloN+mS4OETfOgY29m4QoJTXOvn+Xs/79lXPDMIrszbAPQiekCd/pezn4AihtTsfaCYIkAAAAASUVORK5CYII="/>
-</svg>
+
+  <image id="left-arrow.svg_" data-name="left-arrow.svg " class="cls-1" width="27" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAQAAADWi44LAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAggONREhb3dNAAABDUlEQVQ4y5XTsUoDURCF4X93IxgEq90gxAiCYFax00JsbmOVykJSia8yjyJRRHwA62lsrCwkUWwsIopFCBGDssG18BJ0i703p56PgeFMQCGywB638kZpKgU0zzE1MhwsLKAjagy4AW8mc7SpM+REPryZRLRZZURHRi40ZRJyyBpjzmTgRpZJwAFNvui4LviHSUCLLTJO5dUP/W7bZ5uMc+n7Ighkh5b/OAA5VyHVGREAFa6ps07OpfT8WaS56bFETGpe1Ov4ABFYmJCavg69mYXLxKTmST06YpmFDWI2zKM6GzlloN+mS4OETfOgY29m4QoJTXOvn+Xs/79lXPDMIrszbAPQiekCd/pezn4AihtTsfaCYIkAAAAASUVORK5CYII="

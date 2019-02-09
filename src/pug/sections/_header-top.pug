@@ -1,0 +1,39 @@
+.header-top
+	.container
+		.header-top__descktop
+			.logo
+				a(href="index.html")
+					img(src="../img/logo.png", alt="logo")
+
+			.header-top__center
+				.header-top__center-address
+					.address-icon
+						+maps-icon
+					.address-city.
+						г. Курск, ул. Ленина, д.3
+				.header-top__center-email
+					.email-icon
+						img(src="../img/icons/envelope.png", alt="")
+					a(href="mailto:78003332222@yandex.ru").email-address 78003332222@yandex.ru
+
+			.header-top__right
+				.header-top__right-phone
+					a(href="tel:88003332222").phone-number +7&nbsp;(800)&nbsp;333&nbsp;2&nbsp;222
+					span Работаем с 11.00&nbsp;до&nbsp;23.00
+				.header-top__right-btn
+					.callback-btn Обратный звонок
+
+		.header-top__mobile
+			.header-top__mobile-left
+				.menu-toggle
+					img(src="../img/icons/menu-icon.png", alt="menu")
+			.header-top__mobile-center
+				a(href="index.html").logo-mobile
+					img(src="../img/logo-mobile.png", alt="logo")
+				a(href="index.html").logo-medium
+					img(src="../img/logo-medium.png", alt="logo")
+			.header-top__mobile-right
+				.icon-user
+					img(src="../img/icons/user.png", alt="user")
+				.icon-cart
+					+cart
