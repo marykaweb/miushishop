@@ -8,10 +8,49 @@ block content
 	.container.container--left
 
 		.section-ui
-			.ui-title Компоненты страницы
+			.title-1.text-center Компоненты страницы
+		//-заголовок секции
 			.title-2 Заголовок секции
 		.section-ui
 			+section-title('Заголовок')
 		.section-ui
 			pre.
 				+section-title('Заголовок')
+
+		//-счетчик товара
+		.section-ui
+			.title-2 Счетчик товара
+		.section-ui
+			+counter
+		.section-ui
+			pre.
+				+counter
+
+		//-карточка товара
+		.section-ui
+			.title-2 Карточка товара
+		.section-ui
+
+			.good-card.good-card--v1
+				.good-card__badge(style="background-image: url(../img/icons/fire.png);")
+				.good-card__badge-new
+					span new
+				.card__top(style="background: url(../img/set/set1.jpg);")
+				.card__body.text-center
+					.card__body-title Сет № 10
+					.card__body-description
+						span 72шт
+						span 1560г.
+						span 1700 kKal
+					.card__body-price
+						span.price-sum 1590&nbsp;
+							sup руб
+						span.good-count
+							+counter
+				.card__btn
+					.card__btn-text в корзину
+
+			+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','veg')
+
+
+
