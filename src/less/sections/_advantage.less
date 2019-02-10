@@ -10,20 +10,21 @@
 }
 .advantage-wrapper  {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	padding-top: 65px;
 }
 .advantage-item {
 	width: 100%;
 	padding-bottom: 35px;
+	@media(min-width: 768px) {
+		width: 30%;	
+	}
 	@media(min-width: 1152px) {
 		width: 20%;
 		padding-left: 50px;
 	}
-	@media(min-width: 768px) {
-		width: 30%;	
-	}
+	
 } 
 .advantage-img {
 	width: 77px;
