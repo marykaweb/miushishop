@@ -162,11 +162,18 @@
 	z-index: 2;
 }
 /*карточка вок*/
+.good-card--wok{
+	height: 538px;
+	.card__top{height: 42%;}
+	.card__body{height: 29%;}
+}
+
 .card__body-addition-calc{
 	display: flex;
 	font-size: 12px;
 	height: 20px;
 	align-items: center;
+	margin-bottom: 12px;
 }
 .addition-calc-items{
 	display: flex;
@@ -183,7 +190,20 @@
 .addition-amount__num{
 	margin-right: 8px;
 }
-
+.addition-sum{
+	margin-right: 10px;
+}
+.addition-count{
+	width: 20px;
+	height: 20px;
+	display: flex;
+	background-color:@btnOrder;
+	border-radius: 3px;
+	img {
+		display: inline-block;
+		margin:auto;
+	}
+}
 i.delete{
 
 	svg {
