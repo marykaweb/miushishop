@@ -1,0 +1,25 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Обратная связь';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+
+		.section-ui
+			.ui-title Обратная связь
+		.section-ui
+			.section#feedback.feedback
+				.container-fluid
+					.feedback-wrapper
+						.row
+							.col-xl-12.offset-xl-4
+								.feedback-title-block
+									.feedback-title-sup Есть вопросы
+									+section-title('Оставьте свои контакты')
+								form.feedback-fields
+									input(type="text" name="name").feedback-name
+									input(type="phone" name="phone").feedback-phone
+									input(type="submit" name="sendFeedback" value="Отправить").feedback-submit
+								.feedback-privacy-policy Нажимая на кнопку "Отправить", вы даете согласие на обработку своих персональных данных.
