@@ -31,26 +31,25 @@ block content
 			.title-2 Карточка товара
 		.section-ui
 
-			.good-card.good-card--v1
-				.good-card__badge(style="background-image: url(../img/icons/fire.png);")
-				.good-card__badge-new
-					span new
-				.card__top(style="background: url(../img/set/set1.jpg);")
-				.card__body.text-center
-					.card__body-title Сет № 10
-					.card__body-description
-						span 72шт
-						span 1560г.
-						span 1700 kKal
-					.card__body-price
-						span.price-sum 1590&nbsp;
-							sup руб
-						span.good-count
-							+counter
-				.card__btn
-					.card__btn-text в корзину
-
 			+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','veg')
+		.section-ui
+			pre.
+				+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','veg')
+
+			+good-card('pizza/pizza1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','hit')
+		.section-ui
+			pre.
+				+good-card('pizza/pizza1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','hit')
+
+			+good-card('new/new1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','', 'new')
+		.section-ui
+			pre.
+				+good-card('new/new1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','', 'new')
+
+			+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590')
+		.section-ui
+			pre.
+				+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590')
 
 
 
