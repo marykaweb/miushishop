@@ -114,6 +114,7 @@ $(document).ready(function() {
 				});
 
 				advantageShowMore.on('click', function() {
+					console.log(1);
 					advantageVision.each( function(index, element) {
 						if ( $(element).attr('data-click') == 'close' ) {
 							$(element).slideToggle();
