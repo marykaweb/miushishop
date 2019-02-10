@@ -10,30 +10,36 @@
 	@media(min-width: 1440px){font-size: 60px;}
 
 }
+
+.section-title-2:after{
+	right: 0;
+	background: url(../img/title-right.png);
+	transform: translate(70px, -50%);
+	@media(min-width: 768px){transform: translate(120px, -50%);}
+	@media(min-width: 1440px){transform: translate(145px, -50%);}
+
+}
+.section-title-2:before{
+	left: 0;
+	background: url(../img/title-left.png);
+	transform: translate( -70px, -50%);
+	@media(min-width: 768px){transform: translate( -120px, -50%);}
+	@media(min-width: 1440px){transform: translate( -145px, -50%);}
+
+}
 .section-title-2:before,
 .section-title-2:after{
 	position: absolute;
 	content: "";
-	width: 110px;
+	width: 60px;
 	height: 40px;
 	top: 50%;
 
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-}
-.section-title-2:after{
-	right: 0;
-	background: url(../img/title-right.png);
-	transform: translate(130px, -50%);
-	@media(min-width: 768px){transform: translate(140px, -50%);;}
-	@media(min-width: 1440px){transform: translate(145px, -50%);;}
-}
-.section-title-2:before{
-	left: 0;
-	background: url(../img/title-left.png);
-	transform: translate( -130px, -50%);
-	@media(min-width: 768px){transform: translate( -140px, -50%);}
-	@media(min-width: 1440px){transform: translate( -145px, -50%);}
+	@media(min-width: 768px){width: 90px;}
+	@media(min-width: 1440px){width: 110px;}
+
 }
 /*//section title*/
