@@ -1,0 +1,42 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Мобильное меню';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+
+		.section-ui
+			.ui-title Мобильное меню
+		.section-ui
+			.menu-toggle#mobile-menu(style="display: block")
+				img(src="../img/icons/menu-icon.png", alt="menu")
+		.section-ui(style="border: 1px solid black")
+			.mobile-menu
+				ul.mobile-menu__links
+					li.mobile-menu__links-items Меню
+					li.mobile-menu__links-items Акции и скидки
+					li.mobile-menu__links-items Доставка и оплата
+					li.mobile-menu__links-items Новости
+					li.mobile-menu__links-items Контакты
+				.mobile-menu_contact
+					.mobile-menu_contact-phone +7(800) 333 2 222
+					.mobile-menu_contact-time Работаем с 11.00 до 23.00
+				.mobile-menu__callback-btn.callback-btn Обратный звонок
+				.mobile-menu__adress
+					.mobile-menu__adress-street
+						.address-icon
+							+maps-icon
+						.address-city.
+							г. Курск, ул. Ленина, д.3
+					.mobile-menu__adress-email
+						.email-icon
+							img(src="../img/icons/envelope.png", alt="")
+						a(href="mailto:78003332222@yandex.ru").email-address 78003332222@yandex.ru
+				.mobile-menu__close#mobile-close
+					img(src="../img/icons/close.png", alt="")
+
+		.section-ui
+			pre.
+				include ../sections/_mobile-menu.pug
