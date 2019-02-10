@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 
 
-		// Выпадающее меню
+/** Выпадающее меню **/
 		$('#nav-menu-links-menu').on('mouseenter', function(){
 			$('.nav-menu-links__dropmenu').slideDown(500);
 		});
@@ -89,5 +89,56 @@ $(document).ready(function() {
 				$('.mobile-menu').slideUp(500);
 			}
 		});
+/** //Выпадающее меню **/
+
+/** 10 причин купить у нас. Кнопка показать еще. **/
+		let widthWindow = $(window).width();
+
+		if ( widthWindow <= '768') {
+
+			let advantageShowMore = $('#advantage .show-more'),
+			advantageVision = $('#advantage .advantage-item');
+		
+			// подсчитываем количество элементов в массиве Advantage
+			let countAdvantage = advantageVision.length;
+
+			if ( countAdvantage > 3) {
+				advantageVision.each( function(index, element) {
+					if ( index >= 3 ) {
+						$(this).attr('data-click', 'close');
+						$(this).hide();
+					}
+					
+					return advantageVision;
+
+				});
+
+				advantageShowMore.on('click', function() {
+					console.log(1);
+					advantageVision.each( function(index, element) {
+						if ( $(element).attr('data-click') == 'close' ) {
+							$(element).slideToggle();
+						}
+					});
+					if ( $(this).attr('data-type') == 'close' ) {
+						$(this).html('Скрыть');
+						$(this).attr('data-type', 'open');
+					} else {
+						$(this).html('Показать еще');
+					}
+				});
+
+				$(window).resize(function() {
+					let widthWindow = $(window).width();
+					if ( widthWindow >= '768' ) {
+						advantageVision.show();
+					}
+				});
+			}
+		}
+		
+/** //10 причин купить у нас. Кнопка показать еще. **/
+
+		
 
 });
