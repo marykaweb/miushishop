@@ -37,6 +37,7 @@ $(document).ready(function() {
 	    });
 
 		// слайдер товаров
+
 		$('.goods-slider').owlCarousel({
 	      items: 1,
 	      autoplay:true,
