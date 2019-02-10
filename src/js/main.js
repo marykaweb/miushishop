@@ -36,4 +36,13 @@ $(document).ready(function() {
 	      nav: true,
 	    });
 
+		// Выпадающее меню
+		$('#nav-menu-links-menu').on('mouseenter', function(){
+			$('.nav-menu-links__dropmenu').slideDown(500);
+		});
+
+		$('#nav-menu-links-menu').on('mouseleave', function(){
+			$('.nav-menu-links__dropmenu').slideUp(500);
+		});
+
 });
