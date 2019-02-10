@@ -114,7 +114,6 @@ $(document).ready(function() {
 				});
 
 				advantageShowMore.on('click', function() {
-					console.log(1);
 					advantageVision.each( function(index, element) {
 						if ( $(element).attr('data-click') == 'close' ) {
 							$(element).slideToggle();
@@ -126,7 +125,6 @@ $(document).ready(function() {
 					} else {
 						$(this).html('Показать еще');
 						$(this).attr('data-type', 'close');
-						
 					}
 				});
 
