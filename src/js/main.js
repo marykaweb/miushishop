@@ -125,6 +125,8 @@ $(document).ready(function() {
 						$(this).attr('data-type', 'open');
 					} else {
 						$(this).html('Показать еще');
+						$(this).attr('data-type', 'close');
+						
 					}
 				});
 
