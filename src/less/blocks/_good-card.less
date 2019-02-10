@@ -1,0 +1,143 @@
+.good-card{
+	position: relative;
+	width: 263px;
+  	height: 461px;
+	background-color: #fff;
+	box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.08);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.good-card__badge{
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+	top: 12px;
+	right: 12px;
+	z-index: 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	span{
+		font-family: 'Roboto Slab', serif;
+		font-weight: 700;
+		color:@white;
+	}
+
+}
+.good-card__badge--hit{
+	background: @redColor1;
+	background: -webkit-gradient(linear, left top, left bottom, from(@redColor1), to(@redColor2));
+	background: -moz-linear-gradient(top,  @redColor1,  @redColor2);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='@redColor1', endColorstr='@redColor2');
+}
+.good-card__badge--veg{
+	background: @veganBadge1;
+	background: -webkit-gradient(linear, left top, left bottom, from(@veganBadge1), to(@veganBadge2));
+	background: -moz-linear-gradient(top,  @veganBadge1,  @veganBadge2);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='@veganBadge1', endColorstr='@veganBadge2');
+}
+
+
+
+.good-card__badge-new{
+	position: absolute;
+	background-color:@greendBadge;
+	height: 20px;
+	width: 125px;
+	z-index: 5;
+	left: -34px;
+	top: 13px;
+	padding-top: 1px;
+
+	text-align: center;
+	transform: rotate(-45deg);
+	span{
+		font-family: 'Roboto Slab', serif;
+		font-weight: 700;
+		color:@white;
+		padding-right: 11px;
+	}
+}
+.card__top{
+	height: 49%;
+	margin-bottom: 25px;
+
+	background-position: center;
+	background-size: cover;
+}
+.card__body{
+	height: 23%;
+	margin-bottom: 24px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.card__body-title,
+.card__body-price,
+.card__body-description{
+	height: 33.333%;
+}
+.card__body-title{
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1;
+}
+.card__body-description{
+	font-size: 12px;
+	font-weight: 300;
+
+	span{padding: 0px 7px;}
+	span:not(:last-child){border-right: 1px solid @black;}
+}
+.card__body-price{
+	font-family: 'Roboto Slab', serif;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.card__body-price{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.card__btn{
+	position: relative;
+	cursor: pointer;
+	padding-left: 30px;
+	padding-top: 8px;
+	border-radius: 5px;
+	width: 193px;
+  	height: 40px;
+  	background-color:@btnOrder;
+  	margin-left: auto;
+  	margin-right: auto;
+  	transition: .5s;
+  	&:hover{
+  		opacity: .8;
+  		transform:translateY(2px);
+  	}
+}
+.card__btn-text{
+	display: inline-block;
+
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: @white;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.card__btn:after{
+	position: absolute;
+	content:"";
+	background: url(../img/icons/cart-white.png);
+	right: 30px;
+	top: 8px;
+	width: 25px;
+	height: 22px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	z-index: 2;
+}

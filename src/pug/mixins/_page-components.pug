@@ -5,3 +5,94 @@ mixin button(text, link)
 mixin section-title(title)
 	.section-title.text-center
 		h2.section-title-2 #{title}
+
+//- счетчик товара
+mixin counter
+	.good-counter&attributes(attributes)
+		span.good-counter--plus
+		span.good-counter--num 1
+		span.good-counter--minus
+
+mixin good-card(cardImg, goodName, goodVal, goodWeight, goodKal, goodPrice, cardModif1, cardModif2)
+	if cardModif1
+		if cardModif1 =='fire'
+			.good-card&attributes(attributes)
+				.good-card__badge(style="background-image: url(../img/icons/fire.png);")
+				if cardModif2
+					.good-card__badge-new
+						span new
+				.card__top(style="background: url(../img/"+ cardImg +".jpg);")
+				.card__body.text-center
+					.card__body-title #{goodName}
+					.card__body-description
+						span #{goodVal}шт
+						span #{goodWeight}г.
+						span #{goodKal} kKal
+					.card__body-price
+						span.price-sum #{goodPrice}&nbsp;
+							sup руб
+						span.good-count
+							+counter
+				.card__btn
+					.card__btn-text в корзину
+		if cardModif1 =='hit'
+			.good-card&attributes(attributes)
+				.good-card__badge.good-card__badge--hit
+					span хит
+				if cardModif2
+					.good-card__badge-new
+						span new
+				.card__top(style="background: url(../img/"+ cardImg +".jpg);")
+				.card__body.text-center
+					.card__body-title #{goodName}
+					.card__body-description
+						span #{goodVal}шт
+						span #{goodWeight}г.
+						span #{goodKal} kKal
+					.card__body-price
+						span.price-sum #{goodPrice}&nbsp;
+							sup руб
+						span.good-count
+							+counter
+				.card__btn
+					.card__btn-text в корзину
+		if cardModif1 =='veg'
+			.good-card&attributes(attributes)
+				.good-card__badge.good-card__badge--veg
+					span veg
+				if cardModif2
+					.good-card__badge-new
+						span new
+				.card__top(style="background: url(../img/"+ cardImg +".jpg);")
+				.card__body.text-center
+					.card__body-title #{goodName}
+					.card__body-description
+						span #{goodVal}шт
+						span #{goodWeight}г.
+						span #{goodKal} kKal
+					.card__body-price
+						span.price-sum #{goodPrice}&nbsp;
+							sup руб
+						span.good-count
+							+counter
+				.card__btn
+					.card__btn-text в корзину
+	else
+		.good-card&attributes(attributes)
+			if cardModif2
+				.good-card__badge-new
+					span new
+			.card__top(style="background: url(../img/"+ cardImg +".jpg);")
+			.card__body.text-center
+				.card__body-title #{goodName}
+				.card__body-description
+					span #{goodVal}
+					span #{goodWeight}
+					span #{goodKal}
+				.card__body-price
+					span.price-sum #{goodPrice}&nbsp;
+						sup руб
+					span.good-count
+						+counter
+			.card__btn
+				.card__btn-text в корзину

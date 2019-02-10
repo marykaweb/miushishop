@@ -1,0 +1,33 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Карточка товара';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+		.title Карточка товара
+
+		//-карточка товара
+
+		.section-ui
+
+			+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','veg')
+		.section-ui
+			pre.
+				+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','veg')
+
+			+good-card('pizza/pizza1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','hit')
+		.section-ui
+			pre.
+				+good-card('pizza/pizza1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','hit')
+
+			+good-card('new/new1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','', 'new')
+		.section-ui
+			pre.
+				+good-card('new/new1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','', 'new')
+
+			+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590')
+		.section-ui
+			pre.
+				+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590')

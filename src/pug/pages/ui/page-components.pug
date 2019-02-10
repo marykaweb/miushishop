@@ -8,10 +8,48 @@ block content
 	.container.container--left
 
 		.section-ui
-			.ui-title Компоненты страницы
+			.title-1.text-center Компоненты страницы
+		//-заголовок секции
 			.title-2 Заголовок секции
 		.section-ui
 			+section-title('Заголовок')
 		.section-ui
 			pre.
 				+section-title('Заголовок')
+
+		//-счетчик товара
+		.section-ui
+			.title-2 Счетчик товара
+		.section-ui
+			+counter
+		.section-ui
+			pre.
+				+counter
+
+		//- //-карточка товара
+		//- .section-ui
+		//- 	.title-2 Карточка товара
+		//- .section-ui
+
+		//- 	+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','veg')
+		//- .section-ui
+		//- 	pre.
+		//- 		+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','veg')
+
+		//- 	+good-card('pizza/pizza1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','hit')
+		//- .section-ui
+		//- 	pre.
+		//- 		+good-card('pizza/pizza1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','hit')
+
+		//- 	+good-card('new/new1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','', 'new')
+		//- .section-ui
+		//- 	pre.
+		//- 		+good-card('new/new1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590','', 'new')
+
+		//- 	+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590')
+		//- .section-ui
+		//- 	pre.
+		//- 		+good-card('set/set1', 'Сет № 10', '72шт', '1560г.', '1700kKal', '1590')
+
+
+
