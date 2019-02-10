@@ -1,11 +1,21 @@
 .good-card{
 	position: relative;
-	width: 263px;
-  	height: 461px;
+	width: 227px;
+  	height: 434px;
 	background-color: #fff;
 	box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.08);
 	border-radius: 10px;
 	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media(min-width: 768px){
+		width: 222px;
+	}
+	@media(min-width: 1440px){
+		height: 461px;
+		width: 263px;
+	}
 }
 .good-card__badge{
 	position: absolute;
@@ -22,14 +32,15 @@
 		font-family: 'Roboto Slab', serif;
 		font-weight: 700;
 		color:@white;
+		letter-spacing: 1px;
 	}
 
 }
 .good-card__badge--hit{
 	background: @redColor1;
-	background: -webkit-gradient(linear, left top, left bottom, from(@redColor1), to(@redColor2));
-	background: -moz-linear-gradient(top,  @redColor1,  @redColor2);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='@redColor1', endColorstr='@redColor2');
+	background: -webkit-gradient(linear, left top, left bottom, from(@redBadge1), to(@reddBadge2));
+	background: -moz-linear-gradient(top,  @redBadge1,  @reddBadge2);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='@redBadge1', endColorstr='@reddBadge2');
 }
 .good-card__badge--veg{
 	background: @veganBadge1;
@@ -69,8 +80,16 @@
 .card__body{
 	height: 23%;
 	margin-bottom: 24px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	@media(min-width: 768px){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@media(min-width: 1440px){
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 .card__body-title,
 .card__body-price,

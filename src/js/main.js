@@ -24,8 +24,8 @@ $(document).ready(function() {
 		$('.container').toggleClass('container--left');
 	});
 
-	// owlCarousel
-		$('.owl-carousel').owlCarousel({
+		// owlCarousel в шапке
+		$('.header-slider').owlCarousel({
 	      items: 1,
 	      autoplay:true,
 	      smartSpeed: 700,
@@ -36,6 +36,36 @@ $(document).ready(function() {
 	      dots: true,
 	      nav: true,
 	    });
+
+		// слайдер товаров
+
+		$('.goods-slider').owlCarousel({
+	      items: 1,
+	      autoplay:true,
+	      smartSpeed: 700,
+	      autoplayTimeout:5000,
+	      loop:true,
+	      touchDrag: true,
+	      margin: 0,
+	      dots: true,
+	      nav: true,
+          responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+            0:{
+                items:1
+            },
+             480:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1440:{
+                items:4
+            }
+        	}
+	    });
+
+
 
 		// Выпадающее меню
 		$('#nav-menu-links-menu').on('mouseenter', function(){
