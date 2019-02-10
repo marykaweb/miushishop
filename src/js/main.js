@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	// Scrollbar боковой панели (меню)
 	// $(".left-panel").customScrollbar({preventDefaultScroll: true});
 
@@ -70,6 +71,20 @@ $(document).ready(function() {
 
 		$('#nav-menu-links-menu').on('mouseleave', function(){
 			$('.nav-menu-links__dropmenu').slideUp(500);
+		});
+
+		// Открытие, закрытие мобильного меню.
+		$('#mobile-menu').on('click', function(){
+			$('.mobile-menu').slideDown(500);
+		});
+		$('#mobile-close').on('click', function(){
+			$('.mobile-menu').slideUp(500);
+		});
+		$(window).resize(function() {
+			let widthWindow = $(window).width();
+			if ( widthWindow >= '768' ) {
+				$('.mobile-menu').slideUp(500);
+			}
 		});
 
 });
