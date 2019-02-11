@@ -1,0 +1,12 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Карточка товара';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+		.title Карточка с отзывом
+
+		.section-ui
+			+review-card('rew1', 'Надежда Наширбанова', '5 авг 2017 в 9:58', 'Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня.', 'rev-img' )

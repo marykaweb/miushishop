@@ -136,3 +136,38 @@ mixin good-card-whith-drop(goodName,  goodWeight, goodKal, goodPrice )
 					+counter
 		.card__btn
 			.card__btn-text в корзину
+
+//-карточка отзыва
+
+mixin review-card(authorPhoto, authorName, revDate, revText, productImg )
+	.review-card
+		.review-card__header
+			.author-photo
+				img(src="../img/review/"+ authorPhoto +".jpg", alt="")
+			.review-data
+				.author-name #{authorName}
+				.review-time #{revDate}
+
+		.review-card__main
+			.review-text #{revText}
+
+			.review-img
+				img(style="width: auto" src="../img/review/"+ productImg +".jpg", alt="")
+		.review-card__footer
+			.review-card__footer-icons
+				.vk-icon-group
+					.icon.icon-heart
+						i.fas.fa-heart
+					.num.heart-num
+				.vk-icon-group
+					.icon.icon-comment
+						i.fas.fa-comment
+					.num.comment-num 2
+				.vk-icon-group
+					.icon.icon-repost
+						i.fas.fa-bullhorn
+					.num.repost-num
+
+			.review-card__footer-btn
+				+icon-vk
+				.vk-link Подписаться

@@ -64,6 +64,31 @@ $(document).ready(function() {
             }
         	}
 	    });
+	    // слайдер отзывов
+
+		$('.reviews-slider').owlCarousel({
+	      items: 3,
+	      autoplay:true,
+	      smartSpeed: 700,
+	      autoplayTimeout:5000,
+	      loop:false,
+	      touchDrag: true,
+	      // margin: 0,
+	      // dots: true,
+	      // nav: true,
+          responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+            0:{
+                items:1
+            },
+
+            768:{
+                items:2
+            },
+            1440:{
+                items:3
+            }
+        	}
+	    });
 
 
 
