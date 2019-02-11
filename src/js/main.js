@@ -71,7 +71,7 @@ $(document).ready(function() {
 	      autoplay:true,
 	      smartSpeed: 700,
 	      autoplayTimeout:5000,
-	      loop:false,
+	      loop:true,
 	      touchDrag: true,
 	      // margin: 0,
 	      // dots: true,
