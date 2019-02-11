@@ -89,7 +89,7 @@ $(document).ready(function() {
 
 
 
-/** Выпадающее меню **/
+		/** Выпадающее меню **/
 		$('#nav-menu-links-menu').on('mouseenter', function(){
 			$('.nav-menu-links__dropmenu').slideDown(500);
 		});
@@ -111,9 +111,9 @@ $(document).ready(function() {
 				$('.mobile-menu').slideUp(500);
 			}
 		});
-/** //Выпадающее меню **/
+		/** //Выпадающее меню **/
 
-/** 10 причин купить у нас. Кнопка показать еще. **/
+		/** 10 причин купить у нас. Кнопка показать еще. **/
 		let widthWindow = $(window).width();
 
 		if ( widthWindow <= '768') {
@@ -206,7 +206,7 @@ $(document).ready(function() {
 		});
 		//- конец открыть выпадающий список на карточке Вок
 
-		//-выбрать пункт выпадающего списка
+		//- карточка вок выбрать пункт выпадающего списка
 		let dropDownItem = $('.card-drop__list ').children('.card-drop__item ');
 		dropDownItem.on('click', function(){
 			let selectItem = $(this).text();
@@ -214,5 +214,6 @@ $(document).ready(function() {
 			$(this).parent('.card-drop__list').slideUp(500);
 			dropOpenBtnData = 'close';
 
-		})
+		});
+
 });
