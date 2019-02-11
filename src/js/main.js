@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 		$('.goods-slider').owlCarousel({
 	      items: 1,
-	      autoplay:true,
+	      autoplay:false,
 	      smartSpeed: 700,
 	      autoplayTimeout:5000,
 	      loop:true,
@@ -89,5 +89,24 @@ $(document).ready(function() {
 				$('.mobile-menu').slideUp(500);
 			}
 		});
+
+
+		//- открыть выпадающий сптсок на карточке Вок
+		var dropOpenBtnData;
+		var cardWithDrop = $('.good-card--drop');
+
+		$('.card-drop__btn').on('click', function(){
+			if(dropOpenBtnData != $(this).attr('data-role')){
+
+				$('.card-drop__list').slideDown(500);
+				dropOpenBtnData = $(this).attr('data-role');
+			}
+
+			else{
+				$('.card-drop__list').slideUp(500);
+				dropOpenBtnData = 'close';
+			}
+		});
+		//- конец открыть выпадающий сптсок на карточке Вок
 
 });

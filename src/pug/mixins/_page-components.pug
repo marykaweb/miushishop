@@ -13,6 +13,8 @@ mixin counter
 		span.good-counter--num 1
 		span.good-counter--minus
 
+
+//-карточка товара пицца, роллы сеты
 mixin good-card(cardImg, goodName, goodVal, goodWeight, goodKal, goodPrice, cardModif1, cardModif2)
 	if cardModif1
 		if cardModif1 =='fire'
@@ -96,3 +98,41 @@ mixin good-card(cardImg, goodName, goodVal, goodWeight, goodKal, goodPrice, card
 						+counter
 			.card__btn
 				.card__btn-text в корзину
+
+//-карточка вок
+mixin good-card-whith-drop(goodName,  goodWeight, goodKal, goodPrice )
+	.good-card.good-card--drop
+		.card__top(style="background: url(../img/wok/wok1.jpg);")
+		.card__body.text-center
+			.card__body-title #{goodName}
+			.card__body-description
+				span #{goodWeight}
+				span #{goodKal}
+			.card__body-addition
+				.card__body-addition-calc
+					span Добавить:
+					.addition-calc-items
+						.addition-amount +
+							span.addition-amount__num 2
+							+delete(class="addition-delete")
+						.addition-sum 140
+							sup руб
+						.addition-count
+							img(src="../img/icons/icon-add.png", alt="add")
+
+				.card__body-addition-select
+					.card-drop
+						.card-drop__btn(data-role = "open")
+						span.card-drop__item  Китайский соус
+						.card-drop__list.card-drop__list--hidden
+							span.card-drop__item  Китайский соус
+							span.card-drop__item  Китайский соус
+							span.card-drop__item  Китайский соус
+
+			.card__body-price
+				span.price-sum #{goodPrice}&nbsp;
+					sup руб
+				span.good-count
+					+counter
+		.card__btn
+			.card__btn-text в корзину

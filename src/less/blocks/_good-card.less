@@ -88,8 +88,8 @@
 		padding-right: 15px;
 	}
 	@media(min-width: 1440px){
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: 32px;
+		padding-right: 32px;
 	}
 }
 .card__body-title,
@@ -128,11 +128,12 @@
 	padding-left: 30px;
 	padding-top: 8px;
 	border-radius: 5px;
-	width: 193px;
+	// width: 195px;
+
   	height: 40px;
   	background-color:@btnOrder;
-  	margin-left: auto;
-  	margin-right: auto;
+  	margin-left: 32px;
+  	margin-right: 32px;
   	transition: .5s;
   	&:hover{
   		opacity: .8;
@@ -162,41 +163,91 @@
 	z-index: 2;
 }
 /*карточка вок*/
-.good-card--wok{
+.good-card--drop{
 	height: 510px;
 	height: 540px;
 	.card__top{
 		height: 43%;
+		margin-bottom: 25px;
 	}
-	.card__body{height: 39%;}
+	.card__body{
+		height: 37%;
+		margin-bottom: 0px;
+	}
 	.card__body-price,
 	.card__body-title{height: 20%;}
 
 	.card__body-description{
 		height: 15%;
 	}
-	.card__body-addition{height: 45%;}
+	.card__body-addition{
+		height: 25%;
+		margin-bottom: 25px;
+	}
 	@media(min-width: 768px){}
 	@media(min-width: 1440px){height: 540px;}
 }
-.sauce-select{
-	display:block;
+.card-drop{
+	position: relative;
 	width: 100%;
 	border-width: 0;
 	background-color: @menuTopBorder;
 	border-radius: 3px;
 	height: 25px;
-	font-size: 12px;
-	font-weight: 300;
 	padding-left: 12px;
+	text-align: left;
+	padding-top: 4px;
+	.card-drop__item{
+		display: block;
+		font-size: 12px;
+		font-weight: 300;
+		height: 25px;
 
+	}
+	.card-drop__list{
+		padding-left: 12px;
+		padding-top: 10px;
+		right: 0;
+		left: 0;
+		position: absolute;
+		z-index: 10;
+		bottom: 0;
+		transform: translateY(100%);
+		background-color: @menuTopBorder;
+		width: 100%;
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+		border-top: 1px solid #999;
+		.card-drop__item{
+			cursor: pointer;
+			&:hover{opacity: .8;}
+		}
+	}
+}
+.card-drop__list--hidden{
+	display: none;
+
+}
+.card-drop__btn{
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 25px;
+	background: url(../img/icons/drop-btn.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 2;
+	width: 25px;
 }
 .card__body-addition-calc{
 	display: flex;
+	justify-content: space-between;
 	font-size: 12px;
 	height: 20px;
 	align-items: center;
-	margin-bottom: 12px;
+	margin-bottom: 14px;
 }
 .addition-calc-items{
 	display: flex;
@@ -214,21 +265,23 @@
 	margin-right: 8px;
 }
 .addition-sum{
-	margin-right: 10px;
+	margin-right: 14px;
 }
 .addition-count{
+	cursor: pointer;
 	width: 20px;
 	height: 20px;
 	display: flex;
 	background-color:@btnOrder;
 	border-radius: 3px;
+	padding: 4px;
 	img {
 		display: inline-block;
 		margin:auto;
 	}
 }
 i.delete{
-
+	cursor: pointer;
 	svg {
 		top:-1px;
 		position: relative;
