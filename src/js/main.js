@@ -98,7 +98,7 @@ $(document).ready(function() {
 
 			let advantageShowMore = $('#advantage .show-more'),
 			advantageVision = $('#advantage .advantage-item');
-		
+
 			// подсчитываем количество элементов в массиве Advantage
 			let countAdvantage = advantageVision.length;
 
@@ -108,7 +108,7 @@ $(document).ready(function() {
 						$(this).attr('data-click', 'close');
 						$(this).hide();
 					}
-					
+
 					return advantageVision;
 
 				});
@@ -136,10 +136,10 @@ $(document).ready(function() {
 				});
 			}
 		}
-		
+
 /** //10 причин купить у нас. Кнопка показать еще. **/
 
-		
+
 
 
 		//- открыть выпадающий сптсок на карточке Вок
