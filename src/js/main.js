@@ -73,10 +73,7 @@ $(document).ready(function() {
 	      autoplayTimeout:5000,
 	      loop:true,
 	      touchDrag: true,
-	      // margin: 0,
-	      // dots: true,
-	      // nav: true,
-          responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+          responsive:{
             0:{
                 items:1
             },
@@ -87,8 +84,8 @@ $(document).ready(function() {
             1440:{
                 items:3
             }
-        	}
-	    });
+        }
+	 });
 
 
 
@@ -162,9 +159,34 @@ $(document).ready(function() {
 			}
 		}
 
-/** //10 причин купить у нас. Кнопка показать еще. **/
+		 //-О компании. Кнопка показать еще.
 
 
+		if ( widthWindow <= '768') {
+
+			let aboutCompanyShowMore = $('.show-more--description'),
+			aboutCompanyVision = $('.about-company-text__bottom');
+
+				aboutCompanyShowMore.on('click', function() {
+
+					if ( $(this).attr('data-type') == 'close' ) {
+						$(this).html('Скрыть');
+						$(this).attr('data-type', 'open');
+						aboutCompanyVision.slideDown(500);
+					} else {
+						$(this).html('Показать еще');
+						$(this).attr('data-type', 'close');
+						aboutCompanyVision.slideUp(500);
+					}
+				});
+
+				$(window).resize(function() {
+					let widthWindow = $(window).width();
+					if ( widthWindow >= '768' ) {
+						aboutCompanyVision.show();
+					}
+				});
+			}
 
 
 		//- открыть выпадающий сптсок на карточке Вок
