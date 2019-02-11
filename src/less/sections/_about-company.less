@@ -1,3 +1,14 @@
+#about-company {
+	padding-bottom: 75px;
+	.section-title-2::after,
+	.section-title-2::before{
+		display: none;
+		@media(min-width: 768px){display: block;}
+	}
+	@media(min-width: 768px){padding-bottom: 200px;}
+	@media(min-width: 1440px){padding-bottom: 140px;}
+}
+
 .about-company-text{
 	display: flex;
 	flex-direction: column;
@@ -7,7 +18,7 @@
 	margin-bottom: 18px;
 	}
 }
-.row.about-description{
+.about-description{
 	display: flex;
 	align-items: stretch;
 }
