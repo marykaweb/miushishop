@@ -189,15 +189,14 @@ $(document).ready(function() {
 			}
 
 
-		//- открыть выпадающий сптсок на карточке Вок
+		//- открыть выпадающий список на карточке Вок
 		var dropOpenBtnData;
-		var cardWithDrop = $('.good-card--drop');
 
 		$('.card-drop__btn').on('click', function(){
 			if(dropOpenBtnData != $(this).attr('data-role')){
 
-				$('.card-drop__list').slideDown(500);
 				dropOpenBtnData = $(this).attr('data-role');
+				$(this).parent('.card-drop').children('.card-drop__list').slideDown(500);
 			}
 
 			else{
@@ -205,6 +204,15 @@ $(document).ready(function() {
 				dropOpenBtnData = 'close';
 			}
 		});
-		//- конец открыть выпадающий сптсок на карточке Вок
+		//- конец открыть выпадающий список на карточке Вок
 
+		//-выбрать пункт выпадающего списка
+		let dropDownItem = $('.card-drop__list ').children('.card-drop__item ');
+		dropDownItem.on('click', function(){
+			let selectItem = $(this).text();
+			$(this).parent('.card-drop__list').siblings('.selected-item').text(selectItem);
+			$(this).parent('.card-drop__list').slideUp(500);
+			dropOpenBtnData = 'close';
+
+		})
 });
