@@ -16,10 +16,10 @@ block content
 						.row
 							.col-xl-12.offset-xl-4
 								.feedback-title-block
-									.feedback-title-sup Есть вопросы
+									.feedback-title-sup Есть вопросы?
 									+section-title('Оставьте свои контакты')
 								form.feedback-fields
-									input(type="text" name="name").feedback-name
-									input(type="phone" name="phone").feedback-phone
+									input(type="text" name="name" autocomplete="off").feedback-name
+									input(type="phone" name="phone" autocomplete="off").feedback-phone
 									input(type="submit" name="sendFeedback" value="Отправить").feedback-submit
 								.feedback-privacy-policy Нажимая на кнопку "Отправить", вы даете согласие на обработку своих персональных данных.
