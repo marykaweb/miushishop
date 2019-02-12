@@ -216,4 +216,27 @@ $(document).ready(function() {
 
 		});
 
+		/** Счетчик количества **/		
+
+		let plusBtn = $('.good-counter--plus'),
+			minusBtn = $('.good-counter--minus');
+
+		plusBtn.on('click', function(){
+			startCount = $(this).siblings('.good-counter--num').html();
+			if ( startCount < 20 ) {
+				startCount = ++startCount;
+				$(this).siblings('.good-counter--num').html(startCount);
+			}
+		});
+
+		minusBtn.on('click', function(){
+			startCount = $(this).siblings('.good-counter--num').html();
+			if ( startCount > 1 ) {
+				startCount = --startCount;
+				$(this).siblings('.good-counter--num').html(startCount);
+			}
+		});
+
+		/** //Счетчик количества **/
+
 });
