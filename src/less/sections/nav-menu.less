@@ -24,7 +24,14 @@
 	margin: 0 auto;
 	padding-left: 0;
 }
+.nav-menu-profile__cab:hover .nav-menu-profile:nth-child(1) {
+	background-color: red;
+	margin-right: 328px;
+}
 .nav-menu-links-item {
+	a {
+		margin-left: 15px;
+	}
 	@media(min-width: 768px){
 		display: inline;
 		text-transform: uppercase;
@@ -42,6 +49,7 @@
 .nav-menu-profile {
 	display: none;
 	@media(min-width: 1440px){
+		margin-bottom: 3px;
 		padding-left: 60px;
 		display: flex;
 		align-items: center;
@@ -52,9 +60,10 @@
 }
 .nav-menu-profile__cab,
 .nav-menu-profile__cart {
+	display: flex;
 	padding-left: 0;
 	padding-right: 0;
-	
+	height: 57px;
 }
 .nav-menu-profile__cab {
 	padding-left: 15px;
