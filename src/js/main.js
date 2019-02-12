@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 		$('.goods-slider').owlCarousel({
 	      items: 1,
-	      autoplay:true,
+	      autoplay:false,
 	      smartSpeed: 700,
 	      autoplayTimeout:5000,
 	      loop:true,
@@ -64,10 +64,32 @@ $(document).ready(function() {
             }
         	}
 	    });
+	    // слайдер отзывов
+
+		$('.reviews-slider').owlCarousel({
+	      items: 3,
+	      autoplay:true,
+	      smartSpeed: 700,
+	      autoplayTimeout:5000,
+	      loop:true,
+	      touchDrag: true,
+          responsive:{
+            0:{
+                items:1
+            },
+
+            768:{
+                items:2
+            },
+            1440:{
+                items:3
+            }
+        }
+	 });
 
 
 
-/** Выпадающее меню **/
+		/** Выпадающее меню **/
 		$('#nav-menu-links-menu').on('mouseenter', function(){
 			$('.nav-menu-links__dropmenu').slideDown(500);
 		});
@@ -89,16 +111,16 @@ $(document).ready(function() {
 				$('.mobile-menu').slideUp(500);
 			}
 		});
-/** //Выпадающее меню **/
+		/** //Выпадающее меню **/
 
-/** 10 причин купить у нас. Кнопка показать еще. **/
+		/** 10 причин купить у нас. Кнопка показать еще. **/
 		let widthWindow = $(window).width();
 
 		if ( widthWindow <= '768') {
 
 			let advantageShowMore = $('#advantage .show-more'),
 			advantageVision = $('#advantage .advantage-item');
-		
+
 			// подсчитываем количество элементов в массиве Advantage
 			let countAdvantage = advantageVision.length;
 
@@ -108,7 +130,7 @@ $(document).ready(function() {
 						$(this).attr('data-click', 'close');
 						$(this).hide();
 					}
-					
+
 					return advantageVision;
 
 				});
@@ -136,9 +158,62 @@ $(document).ready(function() {
 				});
 			}
 		}
-		
-/** //10 причин купить у нас. Кнопка показать еще. **/
 
-		
+		 //-О компании. Кнопка показать еще.
+
+
+		if ( widthWindow <= '768') {
+
+			let aboutCompanyShowMore = $('.show-more--description'),
+			aboutCompanyVision = $('.about-company-text__bottom');
+
+				aboutCompanyShowMore.on('click', function() {
+
+					if ( $(this).attr('data-type') == 'close' ) {
+						$(this).html('Скрыть');
+						$(this).attr('data-type', 'open');
+						aboutCompanyVision.slideDown(500);
+					} else {
+						$(this).html('Показать еще');
+						$(this).attr('data-type', 'close');
+						aboutCompanyVision.slideUp(500);
+					}
+				});
+
+				$(window).resize(function() {
+					let widthWindow = $(window).width();
+					if ( widthWindow >= '768' ) {
+						aboutCompanyVision.show();
+					}
+				});
+			}
+
+
+		//- открыть выпадающий список на карточке Вок
+		var dropOpenBtnData;
+
+		$('.card-drop__btn').on('click', function(){
+			if(dropOpenBtnData != $(this).attr('data-role')){
+
+				dropOpenBtnData = $(this).attr('data-role');
+				$(this).parent('.card-drop').children('.card-drop__list').slideDown(500);
+			}
+
+			else{
+				$('.card-drop__list').slideUp(500);
+				dropOpenBtnData = 'close';
+			}
+		});
+		//- конец открыть выпадающий список на карточке Вок
+
+		//- карточка вок выбрать пункт выпадающего списка
+		let dropDownItem = $('.card-drop__list ').children('.card-drop__item ');
+		dropDownItem.on('click', function(){
+			let selectItem = $(this).text();
+			$(this).parent('.card-drop__list').siblings('.selected-item').text(selectItem);
+			$(this).parent('.card-drop__list').slideUp(500);
+			dropOpenBtnData = 'close';
+
+		});
 
 });
