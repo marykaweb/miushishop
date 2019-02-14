@@ -12,7 +12,7 @@ footer.footer
 						a(href="#") Горячие закуски
 						a(href="#") Десерты
 						a(href="#") Напитки
-						a(href="#") Дополительно
+						a(href="#") Дополнительно
 				.col-md-4.offset-md-1
 					.footer-menu-list.footer-menu-list__good
 						.footer-menu-list__title Сеты
@@ -57,10 +57,82 @@ footer.footer
 								a(href="") Рыбная
 								a(href="") Сырная
 								a(href="") Вегитарианская
+		#accordion.footer-accordion
+			.card
+				#headingOne.card-header
+					h5.mb-0
+						button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne') Меню
+				#collapseOne.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+					.card-body
+							ul.footer-menu-list.footer-menu-list__types
+								a(href="#") Суши
+								a(href="#") Гунканы
+								a(href="#") Инари
+								a(href="#") Супы
+								a(href="#") Салаты
+								a(href="#") Горячие закуски
+								a(href="#") Десерты
+								a(href="#") Напитки
+								a(href="#") Дополнительно
+			.card
+				#headingTwo.card-header
+					h5.mb-0
+						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo') Сеты
+				#collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+					.card-body
+						.footer-menu-list__row
+							.footer-menu-list-col
+								a(href="") До 500 руб.
+								a(href="") До 1000 руб. (для двоих)
+								a(href="") До 1500 руб (для двоих - троих)
+								a(href="") До 2000 руб (большая кампания)
+								a(href="") от 2000 руб (очень большая кампания)
+							.footer-menu-list-col.pl-20
+								a(href="") С угрем
+								a(href="") Горячие
+								a(href="") Запеченые
+								a(href="") Суши
+			.card
+				#headingThree.card-header
+					h5.mb-0
+						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree') Роллы
+				#collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+					.card-body
+						.footer-menu-list__row
+							.footer-menu-list-col.width-fix
+								a(href="") Традиционные/Классические
+								a(href="") Простые
+								a(href="") Теплые
+								a(href="") Запеченые
+								a(href="") Вегитарианские
+			.card
+				#headingFour.card-header
+					h5.mb-0
+						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour') Вок
+				#collapseFour.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+					.card-body
+						.footer-menu-list__row
+							.footer-menu-list-col.width-fix
+								a(href="") Яичная
+								a(href="") Удон
+								a(href="") Гречневая
+								a(href="") Стеклянная
+								a(href="") Рис
+			.card
+				#headingFive.card-header
+					h5.mb-0
+						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive') Пицца
+				#collapseFive.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+					.card-body
+						.footer-menu-list__row
+							.footer-menu-list-col.width-fix
+								a(href="") Мясная
+								a(href="") Рыбная
+								a(href="") Сырная
+								a(href="") Вегитарианская
+
 		.footer-bottom
-			.footer-bottom-col
-				.footer-copiryte МИЮШИ &copy; 2017
-				a(href="#").footer-text Соглашение на обработку персональных данных
+
 			.footer-social
 				a(href="#").icon-social.icon-social--vk
 					img(src="img/social/instagram.png", alt="instagram")
@@ -68,5 +140,11 @@ footer.footer
 					img(src="img/social/vk.png", alt="vk")
 				a(href="#").icon-social.icon-social--vk
 					img(src="img/social/facebook.png", alt="facebook")
+
+
+			.footer-bottom-col
+				a(href="#").footer-text Соглашение на обработку персональных данных
+				.footer-copiryte МИЮШИ &copy; 2017
+
 
 
