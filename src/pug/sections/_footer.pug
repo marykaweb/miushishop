@@ -59,9 +59,10 @@ footer.footer
 								a(href="") Вегитарианская
 		#accordion.footer-accordion
 			.card
-				#headingOne.card-header
-					h5.mb-0
-						button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne') Меню
+				#headingOne.card-header.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+					h5.mb-0.accordion-item-title
+						button.btn.btn-link Меню
+					+accordion-icon
 				#collapseOne.collapse(aria-labelledby='headingOne', data-parent='#accordion')
 					.card-body
 							ul.footer-menu-list.footer-menu-list__types
@@ -75,9 +76,10 @@ footer.footer
 								a(href="#") Напитки
 								a(href="#") Дополнительно
 			.card
-				#headingTwo.card-header
-					h5.mb-0
-						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo') Сеты
+				#headingTwo.card-header.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+					h5.mb-0.accordion-item-title
+						button.btn.btn-link Сеты
+					+accordion-icon
 				#collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
 					.card-body
 						.footer-menu-list__row
@@ -93,9 +95,10 @@ footer.footer
 								a(href="") Запеченые
 								a(href="") Суши
 			.card
-				#headingThree.card-header
-					h5.mb-0
-						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree') Роллы
+				#headingThree.card-header.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+					h5.mb-0.accordion-item-title
+						button.btn.btn-link Роллы
+					+accordion-icon
 				#collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
 					.card-body
 						.footer-menu-list__row
@@ -106,9 +109,10 @@ footer.footer
 								a(href="") Запеченые
 								a(href="") Вегитарианские
 			.card
-				#headingFour.card-header
-					h5.mb-0
-						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour') Вок
+				#headingFour.card-header.collapsed(data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+					h5.mb-0.accordion-item-title
+						button.btn.btn-link Вок
+					+accordion-icon
 				#collapseFour.collapse(aria-labelledby='headingThree', data-parent='#accordion')
 					.card-body
 						.footer-menu-list__row
@@ -119,9 +123,10 @@ footer.footer
 								a(href="") Стеклянная
 								a(href="") Рис
 			.card
-				#headingFive.card-header
-					h5.mb-0
-						button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive') Пицца
+				#headingFive.card-header.collapsed(data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+					h5.mb-0.accordion-item-title
+						button.btn.btn-link Пицца
+					+accordion-icon
 				#collapseFive.collapse(aria-labelledby='headingThree', data-parent='#accordion')
 					.card-body
 						.footer-menu-list__row

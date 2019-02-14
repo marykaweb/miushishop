@@ -1,8 +1,11 @@
 .footer{
 	background-color:@footerBg;
-	padding-top: 5em;
+	padding-top: 0;
 	// padding-bottom:4.2em;
 	a:hover{opacity: .7}
+	@media(min-width: 1157px){
+		padding-top: 5em;
+	}
 }
 .footer-menu{
 	margin-bottom: 45px;
@@ -103,7 +106,9 @@
 		border-radius: 0;
 	}
 	.card-header{
+		height: 66px;
 		background-color: @footerBg;
+		position: relative;
 		button {
 			text-decoration: none;
 
@@ -111,6 +116,24 @@
 		}
 
 		border-bottom: 2px solid #20353d;
+		i {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		z-index: 2;
+		transform:translateY(-50%);
+
+	}
+	svg path{fill: @white;}
+	i.active {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		z-index: 2;
+		transform:;
+		transform: translateY(-50%) rotate(180deg);
+	}
+
 	}
 	.card-body{
 		background-color:#20353d ;
@@ -124,4 +147,7 @@
 			font-size: 14px;
 		}
 	}
+}
+.accordion-item-title{
+	display: block;
 }
