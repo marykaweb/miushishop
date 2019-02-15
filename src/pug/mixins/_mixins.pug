@@ -1,2 +1,17 @@
 // Разные миксины по одному, которые понадобятся. Для логотипа, бейджа, и т.д.
 // Преимущества
+
+// модальное меню
+mixin modalWindow(title, content)
+	#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+		.modal-dialog(role='document')
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+					h4#myModalLabel.modal-title= title
+				.modal-body
+					| #{content}
+				.modal-footer
+					button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+					button.btn.btn-primary(type='button') Save changes
