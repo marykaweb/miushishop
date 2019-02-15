@@ -101,14 +101,18 @@ $(document).ready(function() {
 		// Открытие, закрытие мобильного меню.
 		$('#mobile-menu').on('click', function(){
 			$('.mobile-menu').slideDown(500);
+			$('body').addClass('no-scroll');
 		});
 		$('#mobile-close').on('click', function(){
 			$('.mobile-menu').slideUp(500);
+			$('body').removeClass('no-scroll');
 		});
 		$(window).resize(function() {
 			let widthWindow = $(window).width();
 			if ( widthWindow >= '768' ) {
 				$('.mobile-menu').slideUp(500);
+				$('body').removeClass('no-scroll');
+
 			}
 		});
 		/** //Выпадающее меню **/
