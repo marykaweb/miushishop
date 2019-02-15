@@ -5,5 +5,18 @@ block variables
 	- var pageClass= "index-page";
 
 block content
-	.header.header
-		include ../sections/_header-top.pug
+	header.header
+		.container
+			include ../sections/_header-top.pug
+			include ../sections/_nav-menu.pug
+			include ../sections/_header-slider.pug
+
+	include ../sections/_sets-section.pug
+	include ../sections/_rolls-section.pug
+	include ../sections/_pizza-section.pug
+	include ../sections/_wok-section.pug
+	include ../sections/_new-product-section.pug
+	include ../sections/_advantage.pug
+	include ../sections/_reviews-section.pug
+	include ../sections/_feedback.pug
+	include ../sections/_about-company.pug

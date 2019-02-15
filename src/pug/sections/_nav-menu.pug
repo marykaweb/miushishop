@@ -1,0 +1,26 @@
+.row
+	.nav-menu
+		ul.nav-menu-links
+			li.nav-menu-links-item#nav-menu-links-menu
+				a(href="#!") Меню
+				i.fa.fa-angle-down.nav-menu-links__dropdown(aria-hidden="true")
+				ul.nav-menu-links__dropmenu
+					li.nav-menu-links__dropmenu-item Сеты
+					li.nav-menu-links__dropmenu-item Роллы
+					li.nav-menu-links__dropmenu-item Пицца
+					li.nav-menu-links__dropmenu-item WOK
+			li.nav-menu-links-item
+				a(href="#!") Акции и скидки
+			li.nav-menu-links-item
+				a(href="#!") Доставка и оплата
+			li.nav-menu-links-item
+				a(href="#!") Новости
+			li.nav-menu-links-item
+				a(href="#!") Контакты
+		ul.nav-menu-profile
+			li.nav-menu-links-item.nav-menu-profile__cab
+				img(src="../img/icons/user.png", alt="user")
+				a(href="#!") Кабинет
+			li.nav-menu-links-item.nav-menu-profile__cart
+				+cart
+				a(href="#!") Корзина
