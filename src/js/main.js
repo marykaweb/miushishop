@@ -49,6 +49,7 @@ $(document).ready(function() {
 	      margin: 0,
 	      dots: true,
 	      nav: true,
+	      scrollPerPage: true,
           responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
             0:{
                 items:1
