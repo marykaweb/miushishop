@@ -1,0 +1,56 @@
+/* модальное окно feeback*/
+.modal {
+	overflow: hidden!important;
+	text-align: center;
+	bottom: auto;
+}
+.modal:before {
+	display: inline-block;
+	vertical-align: middle;
+	content: " ";
+	height: 100%;
+}
+.modal-dialog {
+	margin: 0;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.modal-content {
+	padding: 25px;
+	@media(min-width: 768px) {
+		width: 40vw;	
+	}
+}
+
+.feedback-modal-window {
+	display: flex;
+	flex-direction: column;
+}
+.feedback-modal-input {
+	outline: none;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: none;
+	border-bottom: 1px solid @black;
+	&:hover {
+		border: 1px solid @passiveDot;
+	}
+}
+.modal-btn {
+	border: none;
+	background-color: @btnOrder;
+	padding: 10px 18px 14px 17px;
+}
+.feedback-modal-textarea {
+	outline: none;
+	border: none; 
+	height: 150px;
+	padding: 15px;
+	margin-top: 15px;
+	border-bottom: 1px solid @black;
+	&:hover {
+		border: 1px solid @passiveDot;
+	}
+}
+/* модальное окно feeback*/
