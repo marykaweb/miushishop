@@ -1,3 +1,10 @@
++modalWindow('Обратный звонок')
+	form(action="").feedback-modal-window
+		input(type="text" placeholder="Введите имя").feedback-modal-input
+		input(type="text" placeholder="Введите email").feedback-modal-input
+		textarea(placeholder="Введите текст сообщения").feedback-modal-textarea
+
+
 .header-top
 	.container
 		.header-top__descktop
@@ -21,7 +28,7 @@
 					a(href="tel:88003332222").phone-number +7&nbsp;(800)&nbsp;333&nbsp;2&nbsp;222
 					span Работаем с 11.00&nbsp;до&nbsp;23.00
 				.header-top__right-btn
-					.callback-btn Обратный звонок
+					.callback-btn(data-toggle="modal" data-target="#exampleModalLong") Обратный звонок
 
 		.header-top__mobile
 			.header-top__mobile-left

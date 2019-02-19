@@ -49,6 +49,7 @@ $(document).ready(function() {
 	      margin: 0,
 	      dots: true,
 	      nav: true,
+	      scrollPerPage: true,
           responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
             0:{
                 items:1
@@ -220,7 +221,7 @@ $(document).ready(function() {
 
 		});
 
-		/** Счетчик количества **/		
+		/** Счетчик количества **/
 
 		let plusBtn = $('.good-counter--plus'),
 			minusBtn = $('.good-counter--minus');
@@ -242,5 +243,20 @@ $(document).ready(function() {
 		});
 
 		/** //Счетчик количества **/
+
+
+
+		$('.collapse').each(function(){
+			$(this).on('show.bs.collapse', function(){
+				$(this).siblings('.card-header').children('.accordion-icon').addClass('active');
+			});
+			$(this).on('hide.bs.collapse', function(){
+				$(this).siblings('.card-header').children('.accordion-icon').removeClass('active');
+			})
+		})
+
+		$('.owl-prev').on('click', function(){
+			console.log('ghbfg');
+		});
 
 });
