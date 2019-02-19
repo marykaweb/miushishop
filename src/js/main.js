@@ -255,4 +255,8 @@ $(document).ready(function() {
 			})
 		})
 
+		$('.owl-prev').on('click', function(){
+			console.log('ghbfg');
+		});
+
 });
