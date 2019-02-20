@@ -245,7 +245,7 @@ $(document).ready(function() {
 		/** //Счетчик количества **/
 
 
-
+		//accordion
 		$('.collapse').each(function(){
 			$(this).on('show.bs.collapse', function(){
 				$(this).siblings('.card-header').children('.accordion-icon').addClass('active');
@@ -258,5 +258,7 @@ $(document).ready(function() {
 		$('.owl-prev').on('click', function(){
 			console.log('ghbfg');
 		});
+
+
 
 });
