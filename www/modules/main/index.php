@@ -1,6 +1,5 @@
 <?php
 
-
 ob_start();
 include ROOT . "templates/banner/banner.tpl";
 include ROOT . "templates/section/sets/sets-preview.tpl";

@@ -896,6 +896,22 @@ i {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  min-height: 258px;
+}
+@media (min-width: 768px) {
+  .header-content {
+    min-height: 420px;
+  }
+}
+@media (min-width: 1157px) {
+  .header-content {
+    min-height: 520px;
+  }
+}
+@media (min-width: 1440px) {
+  .header-content {
+    min-height: 675px;
+  }
 }
 .header-content .owl-carousel-item {
   height: 245px;
@@ -916,6 +932,7 @@ i {
     height: 675px;
   }
 }
+
 .header-content .owl-dots {
   position: relative;
   left: 0;
