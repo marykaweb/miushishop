@@ -21,18 +21,23 @@
 .owl-carousel.goods-slider{
 	.owl-dots{
 		position: absolute;
-		bottom: -35px;
+		bottom: 0px;
 		left: 50%;
 		transform: translate(-50%);
 		// display: inline-block;
 		z-index: 3;
+		@media(min-width: 768px){bottom: -35px;}
 		.owl-dot{
 			height: 8px;
 			width: 8px;
 			background-color: @passiveDot;
 			border-radius: 50%;
 			outline: none;
-			&:not(:last-child){margin-right: 20px;}
+			&:not(:last-child){
+				margin-right: 10px;
+				@media(min-width: 768px){margin-right: 20px;}
+
+			}
 			&.active{background-color: @actievDot;}
 		}
 	}
@@ -66,8 +71,8 @@
 			background-image:url('../img/icons/left.png'); }
 	}
 	.owl-dots{
-		display: none;
-			@media(min-width: 768px){display: inline-block;}
+		// display: none;
+		// 	@media(min-width: 768px){display: inline-block;}
 	}
 	.owl-nav{
 		display: none;
