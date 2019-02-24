@@ -4,9 +4,8 @@ define('HOST', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/')
 /* Физический путь до корневой директории */
 define('ROOT', dirname(__FILE__) . '/');
 
-require_once ROOT . "config.php";
-require_once ROOT . "db.php";
-
+require ROOT . "config.php";
+require ROOT . "db.php";
 /* ------------------------------
 
 РОУТЕР
@@ -22,5 +21,7 @@ switch ( $uri[0] ) {
 	case '':
 		include ROOT . "modules/main/index.php";
 		break;
-
+	case 'login':
+		include ROOT . "modules/login/index.php";
+		break;
 }

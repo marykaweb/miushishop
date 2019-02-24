@@ -22,5 +22,4 @@ include ROOT . "templates/template.tpl";
 include ROOT . "templates/_parts/_foot.tpl";
 include ROOT . "templates/_parts/_footer.tpl";
 
-
 ?>

@@ -5,7 +5,18 @@
 					<h5 class="modal-title" id="exampleModalLongTitle">Обратный звонок</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 				</div>
 				<div class="modal-body">
-					<form class="feedback-modal-window" action=""><input class="feedback-modal-input" type="text" placeholder="Введите имя" /><input class="feedback-modal-input" type="text" placeholder="Введите email" /><textarea class="feedback-modal-textarea" placeholder="Введите текст сообщения"></textarea></form>
+					<form class="feedback-modal-window" action="<?=HOST?>login">
+						<div class="form-group">
+							<label class="form-group__label" for="user-name">Ваше имя</label><input class="forme-input" type="text" name="user-name" />
+						</div>
+						<div class="form-group">
+							<label class="form-group__label" for="user-email">Ваш email</label><input class="forme-input" type="text" name="user-email" />
+						</div>
+						<div class="form-group"><label class="form-group__label" for="message">Сообщение</label>
+							<!-- <input class="forme-input" type="text" name="message" /> -->
+							<textarea class="feedback-modal-textarea" name="message"></textarea>
+						</div>
+					</form>
 				</div>
 				<div class="modal-footer"><button class="btn btn-primary modal-btn" type="button">Отправить</button></div>
 			</div>
