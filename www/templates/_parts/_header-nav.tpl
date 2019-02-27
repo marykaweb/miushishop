@@ -7,7 +7,7 @@
 			<div class="error"></div>
 			<div class="modal-body">
 				<!-- <?php require ROOT . "templates/_parts/errors.tpl"; ?> -->
-				<form id="login-form" class="login-form" action="" method="POST">
+				<form id="login-form" class="login-form" action="<?=HOST?>login" method="POST">
 					<div class="form-group"><label class="form-group__label" for="user-login">E-mail</label><input class="forme-input" type="text" name="user-login" /></div>
 					<div class="form-group"><label class="form-group__label" for="user-password">Пароль</label><input class="forme-input" type="password" name="user-password" /></div>
 					<label class="form-label"><input class="form-checkbox" type="checkbox" name="form-checkbox" checked="checked" /><span class="custom-checkbox"></span><label class="form-label">Запомнить меня</label></label>
