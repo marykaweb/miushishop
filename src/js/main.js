@@ -259,6 +259,9 @@ $(document).ready(function() {
 			console.log('ghbfg');
 		});
 
+		$('.table-row__item--del').on('click', function(){
 
+			$(this).closest('.table-row').fadeOut(500);
+		})
 
 });
