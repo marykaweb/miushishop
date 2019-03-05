@@ -1,14 +1,20 @@
 .table-row--header{
-	display: none;
-	height: 50px;
+	height: 60px;
 	border-radius: 20px 20px 0 0;
 	background-color: #e6e6e6;
 	align-items: center;
 	margin-bottom: 16px;
 	padding-left: 16px;
-	@media(min-width: 768px){display: flex;}
+	display: flex;align-items: center;
+	.table-row--header-content{display: none;
+		@media(min-width: 768px){display: flex;}
+	}
+
 	@media(min-width: 1440px){padding-left: 0;}
 }
+
+
+
 .table-title{
 	text-transform: uppercase;
 	font-size: 12px;
@@ -24,6 +30,7 @@
 	min-height: 125px;
 	display: flex;
 	align-items: center;
+	margin-bottom: 24px;
 }
 .table-row__item--good{
 	padding-bottom: 16px;
@@ -113,7 +120,7 @@
 .table-row__mobile-summ{
 	border-top: 1px solid @pageTitle;
 	padding-top: 12px;
-	margin-left: auto;
+	// margin-left: auto;
 	padding-right: 24px;
 	.table-row__item{justify-content: flex-end;}
 
@@ -123,4 +130,15 @@
 	padding-top: 0px;
 	.table-row__item{justify-content: center;}
 	}
+}
+
+.table-row--footer{
+	height: 90px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: #e6e6e6;
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 90px;
 }
