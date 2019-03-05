@@ -11,7 +11,8 @@
 }
 .table-title{
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 12px;
+	@media(min-width: 480px){font-size: 13px;}
 	@media(min-width: 992px){font-size: 14px;}
 	@media(min-width: 1440px){font-size: 16px;}
 }
@@ -21,14 +22,17 @@
 	padding-top: 12px;
 	padding-bottom: 12px;
 	min-height: 125px;
+	display: flex;
+	align-items: center;
 }
 .table-row__item--good{
 	padding-bottom: 16px;
 	@media(min-width: 768px){padding-bottom: 0px;}
 }
 .table-good__img{
-	min-width: 80px;
+	min-width: 70px;
 	max-width: 100px;
+	@media(min-width: 480px){min-width: 80px;}
 	@media(min-width: 768px){
 		max-width: 115px;
 		padding-left: 16px;
@@ -50,7 +54,9 @@
 	@media(min-width: 1440px){font-size: 16px;}
 }
 .table-good__descrition__text{
-	font-size: 12px;
+	font-size: 11px;
+
+	@media(min-width: 768px){font-size: 12px;}
 }
 .table-row__item{
 	display: flex;
@@ -64,6 +70,7 @@
 }
 .table-row__item--good{
 	justify-content: flex-start;
+
 }
 .table-row__item--count{
 	display: flex;
@@ -98,4 +105,22 @@
 		justify-content: center;
 	}
 	@media(min-width: 1440px){justify-content: flex-end;}
+}
+.table-row__item--price{
+	display: none;
+	@media(min-width: 768px){display: flex;}
+}
+.table-row__mobile-summ{
+	border-top: 1px solid @pageTitle;
+	padding-top: 12px;
+	margin-left: auto;
+	padding-right: 24px;
+	.table-row__item{justify-content: flex-end;}
+
+	@media(min-width: 768px){
+		padding-right: 0;
+	border-top: 0px;
+	padding-top: 0px;
+	.table-row__item{justify-content: center;}
+	}
 }
