@@ -1,0 +1,51 @@
+i{
+	cursor: pointer;
+	display: inline-block;
+
+}
+.arr-right--rotate{
+	transform: rotate(180deg);
+
+}
+.good-counter{
+	display: flex;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	span{
+		margin-right: 14px;
+		display: inline-block;
+		&:last-child{margin-right: 0;}
+	}
+	font-size: 14px;
+	.good-counter--plus,
+	.good-counter--minus{
+		position: relative;
+		cursor: pointer;
+		width: 15px;
+		height: 15px;
+		border: 1px solid @counter;
+		color:@counter;
+		border-radius: 50%;
+
+	}
+	.good-counter--plus:after{
+		position: absolute;
+		content: "+";
+		padding-bottom: 1px;
+		top: 7px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.good-counter--minus:after{
+		position: absolute;
+		content: "\2013";
+		top: 5px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+	.good-counter--plus:hover,
+	.good-counter--minus:hover{
+		opacity: .7;
+	}
+}

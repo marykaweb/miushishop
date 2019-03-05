@@ -1,0 +1,34 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Слайдер в шапке';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+		.title Слайдер в шапке
+		.ui-section
+			header.header
+				.header-content
+					.owl-carousel.header-slider
+						//- slider item 1
+						.owl-carousel-item
+							.owl-carousel-item-1.carousel-item(style="background-repeat: no-repeat; background-size: cover;background-position: center;")
+						//- slider item 1
+						.owl-carousel-item
+							.owl-carousel-item-2.carousel-item(style="background-repeat: no-repeat; background-size: cover;background-position: center;")
+						//- slider item 1
+						.owl-carousel-item
+							.owl-carousel-item-3.carousel-item(style="background-repeat: no-repeat; background-size: cover;background-position: center;")
+		.section-ui
+			pre.
+				.owl-carousel.header-slider
+
+					.owl-carousel-item
+						.owl-carousel-item-1.carousel-item(style="background-repeat: no-repeat; background-size: cover;background-position: center;")
+
+					.owl-carousel-item
+						.owl-carousel-item-2.carousel-item(style="background-repeat: no-repeat; background-size: cover;background-position: center;")
+
+					.owl-carousel-item
+						.owl-carousel-item-3.carousel-item(style="background-repeat: no-repeat; background-size: cover;background-position: center;")

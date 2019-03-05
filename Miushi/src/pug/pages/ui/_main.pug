@@ -1,0 +1,13 @@
+extends ../../layouts/page-layout/page.pug
+
+block variables
+	- var title = 'Главная страница';
+	- var pageClass= "index-page";
+
+block content
+	header.header
+		.container
+			include ../../sections/_header-top.pug
+			include ../../sections/_nav-menu.pug
+			include ../../sections/_header-slider.pug
+			include ../../sections/_advantage.pug

@@ -1,0 +1,101 @@
+.table-row--header{
+	display: none;
+	height: 50px;
+	border-radius: 20px 20px 0 0;
+	background-color: #e6e6e6;
+	align-items: center;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	@media(min-width: 768px){display: flex;}
+	@media(min-width: 1440px){padding-left: 0;}
+}
+.table-title{
+	text-transform: uppercase;
+	font-size: 13px;
+	@media(min-width: 992px){font-size: 14px;}
+	@media(min-width: 1440px){font-size: 16px;}
+}
+
+.table-row{
+	background-color: #f8f7f7;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	min-height: 125px;
+}
+.table-row__item--good{
+	padding-bottom: 16px;
+	@media(min-width: 768px){padding-bottom: 0px;}
+}
+.table-good__img{
+	min-width: 80px;
+	max-width: 100px;
+	@media(min-width: 768px){
+		max-width: 115px;
+		padding-left: 16px;
+	}
+	@media(min-width: 1440px){
+		padding-left: 0;
+		min-width: 115px;}
+
+}
+.table-good__descrition{
+	padding-left: 12px;
+	@media(min-width: 992px){padding-left: 16px;}
+	@media(min-width: 1440px){padding-left: 20px;}
+}
+.table-good__descrition__title{
+	font-size: 13px;
+	padding-bottom: 12px;
+	@media(min-width: 992px){font-size: 14px;}
+	@media(min-width: 1440px){font-size: 16px;}
+}
+.table-good__descrition__text{
+	font-size: 12px;
+}
+.table-row__item{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: 13px;
+	justify-content: center;
+
+	@media(min-width: 992px){font-size: 14px;}
+	@media(min-width: 1440px){font-size: 16px;}
+}
+.table-row__item--good{
+	justify-content: flex-start;
+}
+.table-row__item--count{
+	display: flex;
+
+	align-items: center;
+	input{
+		display: inline-block;
+		margin-right: 5px;
+		width: 2.7em;
+		height: 2.7em;
+		text-align: center;
+		border: 1px solid @pageTitle;
+		font-size: 13px;
+		@media(min-width: 768px){margin-right: 12px;}
+		@media(min-width: 992px){font-size: 14px;}
+		@media(min-width: 1440px){
+			font-size: 16px;
+
+		}
+
+	}
+	@media(min-width: 768px){padding-left: 12px;}
+}
+.good-count-name{font-size: 12px;}
+.table-row__item--del{
+	justify-content: flex-end;
+	padding-right: 8px;
+	cursor: pointer;
+	path{fill: red;}
+	@media(min-width: 768px){
+		padding-right: 0px;
+		justify-content: center;
+	}
+	@media(min-width: 1440px){justify-content: flex-end;}
+}

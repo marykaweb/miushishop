@@ -1,0 +1,42 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Форма авторизации';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+
+		.section-ui
+			.ui-title Форма авторизации
+
+	// Button trigger modal
+	button.btn.btn-primary(type='button', data-toggle='modal', data-target='#login-window')
+		| Войти
+	// Modal
+	#login-window.modal.fade(tabindex='-1', role='dialog', aria-labelledby='login-windowLabel', aria-hidden='true')
+		.modal-dialog(role='document')
+			.modal-content
+				.modal-header
+					h5#login-windowLabel.modal-title Войти
+
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+				.modal-body
+					form.login-form()
+						.form-group
+							label.form-group__label(for ="user-name") Логин
+							input.forme-input(type="text" name="user-name")
+						.form-group
+							label.form-group__label(for ="user-password") Пароль
+							input.forme-input(type="password" name="user-password")
+						label.form-label
+							input(type="checkbox" name="form-checkbox" class="form-checkbox" checked)
+							span.custom-checkbox
+							label.form-label Запомнить меня
+
+				.modal-footer.login-form-footer
+					.login-form-footer__btn
+						button.btn.btn-login(type='button') Войти
+						button.btn.btn-danger(type='button', data-dismiss='modal') Отменить
+					a(href="#").recover-password Забыли пароль?

@@ -1,0 +1,48 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Таблица товаров';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+
+		.section-ui
+			.ui-title Таблица товаров
+		.section-ui
+			.table-row--header
+				.container
+					.row
+						.col-md-5.offset-md-0.offset-xl-1.col-xl-4
+							h4.table-title Наименование товара
+
+						.col-md-2.col-xl-2
+							h4.table-title.text-center Количество
+						.col-md-2.col-xl-1
+							h4.table-title.text-center Цена
+						.col-md-2.col-xl-1.offset-lg-0.offset-xl-1
+							h4.table-title.text-center Сумма
+			.table-row
+				.container
+					.row
+						.col-md-5.offset-md-0.col-xl-4.offset-xl-1
+							.table-row__item.table-row__item--good.d-flex
+								.table-good__img
+									img(src="../img/pizza/pizza1.jpg", alt="заказ")
+								.table-good__descrition
+									.table-good__descrition__title Суппер-пуппер пицца
+									.table-good__descrition__text помидоры, огурцы, лук, курица,соус барбекю, сыр пармезан
+
+						.col-3.col-md-2.col-xl-2
+							.table-row__item.table-row__item--count
+								input(type="text" value ='2')
+								span.good-count-name шт.
+
+						.col-3.col-md-2.col-xl-1
+							.table-row__item.table-row__item--price 150 РУБ.
+						.col-3.col-md-2.col-xl-1.offset-lg-0.offset-xl-1
+							.table-row__item.table-row__item--summ 300 РУБ.
+						.col-3.col-md-1.col-xl-1
+							.table-row__item.table-row__item--del
+								i.fas.fa-times
+
