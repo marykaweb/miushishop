@@ -1,4 +1,5 @@
 <?php
+
 /* Путь до корневой директории скрипта по протоколу HTTP */
 define('HOST', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/');
 /* Физический путь до корневой директории */
@@ -21,7 +22,7 @@ switch ( $uri[0] ) {
 	case '':
 		include ROOT . "modules/main/index.php";
 		break;
-	case 'login':
-		include ROOT . "modules/login/index.php";
-		break;
+	// case 'login':
+	// 	include ROOT . "modules/login/index.php";
+	// 	break;
 }
