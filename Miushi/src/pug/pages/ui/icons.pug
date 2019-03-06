@@ -1,0 +1,41 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Кнопки - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.container.container--left
+
+		.section-ui
+			.ui-title Иконки
+		.section-ui(style="padding-bottom:10px")
+			+cart
+		.section-ui(style="padding-top:0px")
+			pre.
+				+cart
+		.section-ui(style="background-color:orange; padding-bottom:10px")
+			+cart-in-button
+		.section-ui(style="padding-top:0px")
+			pre.
+				+cart-in-button
+		.section-ui(style="padding-bottom:10px")
+			+maps-icon
+		.section-ui(style="padding-top:0px")
+			pre.
+				+maps-icon
+		.section-ui(style="background-color:red")
+			+fire-icon
+		.section-ui(style="padding-top:0px")
+			pre.
+				+fire-icon
+		.section-ui(style="padding-bottom:10px")
+			+arr-left
+		.section-ui(style="padding-top:0px")
+			pre.
+				+arr-left
+		.section-ui(style="padding-bottom:10px")
+			+arr-right
+		.section-ui(style="padding-top:0px")
+			pre.
+				+arr-right
